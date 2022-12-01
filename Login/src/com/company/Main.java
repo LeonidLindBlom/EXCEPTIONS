@@ -2,6 +2,8 @@ package com.company;
 
 import java.util.Scanner;
 
+import static com.company.Login.checkCorrect;
+
 public class Main {
 
     public static void main(String[] args){
@@ -14,8 +16,6 @@ public class Main {
         String password = passwordScanner.nextLine();
         System.out.println("Повторите пароль");
         String confirmPassword = passwordScanner.nextLine();
-        Login log = new Login();
-        Boolean a = log.checkCorrect(login, password,confirmPassword, regex);
-        System.out.println(a);
+        System.out.println(checkCorrect(login, password, confirmPassword, regex));
     }
 }

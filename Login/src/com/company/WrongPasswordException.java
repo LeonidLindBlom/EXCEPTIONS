@@ -2,6 +2,7 @@ package com.company;
 
 public class WrongPasswordException extends Exception{
     private final String text;
+
     public WrongPasswordException() {
         text = "Неверный пароль";
     }

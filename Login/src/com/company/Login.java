@@ -1,7 +1,7 @@
 package com.company;
 
 public class Login{
-    public boolean checkCorrect(String login, String password, String confirmPassword, String regex) {
+    public static boolean checkCorrect(String login, String password, String confirmPassword, String regex) {
         boolean a = true;
         try {
             if(!login.matches(regex)) {

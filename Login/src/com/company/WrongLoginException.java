@@ -2,6 +2,7 @@ package com.company;
 
 public class WrongLoginException extends Exception {
     private final String text;
+
     public WrongLoginException() {
         text = "Неверный логин";
     }
